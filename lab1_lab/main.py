@@ -5,7 +5,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.model_selection import RepeatedStratifiedKFold
 from sklearn.naive_bayes import GaussianNB
 from sklearn.tree import DecisionTreeClassifier
-
+# 10/10
 selected_files = (
     "breastcan.csv",
     "wisconsin.csv",
