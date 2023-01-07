@@ -56,7 +56,7 @@ def parallel_convolve(np.ndarray image, np.ndarray kernel):
     cdef np.ndarray result = np.zeros([i_max, j_max], dtype=DTYPE)
     cdef long [:, :] result_view = result
     cdef long [:, :] image_view = image
-    cdef long [:, :] kernel_view = kernel 
+    cdef long [:, :] kernel_view = kernel
     cdef int x, y, s, t, v, w
     cdef int kernel_h_iterator_from, kernel_h_iterator_to, kernel_w_iterator_from, kernel_w_iterator_to
     cdef long res_value

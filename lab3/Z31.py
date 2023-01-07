@@ -23,6 +23,7 @@ def main():
     start = time.perf_counter()
     parallel_conv_img = zx.parallel_convolve(img, mask)
     stop = time.perf_counter()
+    print(parallel_conv_img[:, :])
     print("parallel exec time: ", stop - start)
     ax[0].imshow(img, cmap="gray")
     ax[1].imshow(parallel_conv_img, cmap="gray")
